@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pantheon-docs-writer",
+  "version": "1.0.0",
+  "description": "Claude Code skill for writing Pantheon documentation",
+  "owner": {
+    "name": "Chris Reynolds",
+    "url": "https://github.com/jazzsequence"
+  },
+  "plugins": [
+    {
+      "name": "jazzsequence-skills",
+      "description": "Write, edit, and review Pantheon documentation following the style guide, inclusive language guidelines, Diátaxis structure, and platform conventions.",
+      "source": "./",
+      "category": "development"
+    }
+  ]
+}
