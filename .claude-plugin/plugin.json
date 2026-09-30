@@ -1,6 +1,6 @@
 {
   "name": "jazzsequence-skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pantheon docs writer skill for Claude Code",
   "author": {
     "name": "Chris Reynolds",
