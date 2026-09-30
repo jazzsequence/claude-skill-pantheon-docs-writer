@@ -112,15 +112,15 @@ reviewed: "2024-06-01"
 ### Standard section order
 
 1. **Introductory paragraph** — one paragraph explaining what this doc covers and what the reader will accomplish. No heading.
-2. **Before You Begin** (`## Before You Begin`) — prerequisites only. Use a bulleted list.
+2. **Before you begin** (`## Before you begin`) — prerequisites only. Use a bulleted list.
 3. **Content sections** — `##` for major steps, `###` for subsections. Don't go deeper than `###` unless unavoidable.
 4. **Troubleshooting** (`## Troubleshooting`) — if applicable. Error messages as `###` headers, verbatim.
-5. **More Resources** (`## More Resources`) — 3–5 links. Last section. Always present.
+5. **More resources** (`## More resources`) — 3–5 links. Last section. Always present.
 
-### Before You Begin
+### Before you begin
 
 ```markdown
-## Before You Begin
+## Before you begin
 
 Be sure that you have:
 
@@ -139,10 +139,10 @@ Error message headers are `###`, written verbatim as they appear in the UI/termi
 ### RedisException: Redis server went away
 ```
 
-### More Resources
+### More resources
 
 ```markdown
-## More Resources
+## More resources
 
 - [Getting Started with Terminus](/terminus)
 - [Git on Pantheon Guide](/guides/git)
@@ -162,7 +162,10 @@ Error message headers are `###`, written verbatim as they appear in the UI/termi
 
 ### Headings
 
-- Use **Title Case** for all headings
+- Use **sentence case** for all headings: capitalize only the first word, proper nouns, product names (Terminus, Multidev, WordPress), and acronyms. Applies to docs, guides, and release notes alike
+  - ✅ `## Exclude specific pages from caching`
+  - ❌ `## Exclude Specific Pages from Caching`
+- Much existing content still uses title case. Don't mass-convert headings in files you're not otherwise editing, but do convert headings you add or touch
 - The page `title:` in frontmatter renders as the H1 — don't repeat it in the body
 - Start body content at `##`
 - Don't skip levels (no jumping from `##` to `####`)
@@ -264,7 +267,7 @@ Use for extraneous but useful info — troubleshooting details, pro tips, option
 ```html
 <Accordion title="Panel Title" id="unique-id" icon="wrench">
 
-### Panel Content Header
+### Panel content header
 
 Additional context or advanced instructions.
 
@@ -332,7 +335,7 @@ Use `<dfn>` for new terms — they're indexed to the Glossary automatically:
 
 ## Step 7: Variables Pattern
 
-When a guide requires the reader to substitute values (site names, env names, etc.), define them upfront with an export callout in "Before You Begin":
+When a guide requires the reader to substitute values (site names, env names, etc.), define them upfront with an export callout in "Before you begin":
 
 ```html
 <Alert title="Exports" type="export">
@@ -395,8 +398,8 @@ Before delivering or committing any doc:
 - [ ] Correct content type (`doc` vs `guide`) and file location
 - [ ] Frontmatter complete with all required fields, including `reviewed` set to today's date
 - [ ] Introductory paragraph present (no heading)
-- [ ] "Before You Begin" section if steps follow
-- [ ] "More Resources" section at the end
+- [ ] "Before you begin" section if steps follow
+- [ ] "More resources" section at the end
 
 **Release notes only**
 - [ ] Filename follows `YYYY-MM-DD-slug.md` and slug will produce the correct URL
@@ -407,7 +410,7 @@ Before delivering or committing any doc:
 - [ ] Links to relevant docs included
 
 **Style**
-- [ ] Title case on all headings
+- [ ] Sentence case on all headings
 - [ ] Bold used only for UI elements and navigation
 - [ ] Italics for emphasis (not bold)
 - [ ] Second person throughout ("you", not "we" or "the user")
@@ -519,7 +522,7 @@ Use multiple categories when appropriate: `[wordpress, action-required]`.
 
 #### 1. Headings use sentence case
 
-Release notes use **sentence case** for all headings — capitalize only the first word and proper nouns. This is the opposite of regular docs.
+Release notes use **sentence case** for all headings — capitalize only the first word and proper nouns. This is the same rule as regular docs.
 
 - ✅ `## Explore new features in Pantheon's latest Drupal updates`
 - ❌ `## Explore New Features in Pantheon's Latest Drupal Updates`
