@@ -43,6 +43,28 @@ Mark these `unverified` and ask the Content Publisher team:
 - Reply to each suggestion with the rule it follows (for example "Voice, Style, and Flow: avoid be verbs") and flag any product claim you couldn't verify.
 - Don't change a link target, heading level, or bold-to-italic formatting by search-and-replace; Docs' Find and Replace makes text suggestions only. Leave a comment for those.
 - Leave claims you can't confirm as comments. Don't rewrite them.
+- When a comment is vague, don't ask the reviewer what they meant. Answer with a concrete proposal built from the entry's own text, so the reviewer can reply "agreed" or correct it.
+- Keep each reply to about 3 sentences. Name the source (page URL, UI label, or MCP tool), say what it shows, and say what you didn't test. Quote the revised wording and end with a pointer to the numbered question list. Never write "Checked" without the source and the untested part.
+- When a reply says a suggestion exists, re-read the entry in the Doc first and confirm it.
+- For a terminology comment, follow "Terminology conflicts" in `inputs-claims-and-sources.md`.
+- Put product questions in a numbered list outside the page body, and cite the number (for example "Q7") in the thread. Record a ruling only after the product owner confirms it; until then, write "recommend".
+- When a reviewer says published docs are wrong, look for code or product evidence before you change either side. Separate doc defects from product critiques and route each to its owner.
+
+## Safety in a shared Doc
+
+- Switch to Suggesting mode before you touch a shared tab. Do scratch work in a tab the author creates.
+- Jump to the end of a tab with cmd+Down on a Mac; cmd+End does nothing.
+- Check the clipboard before you paste. The author may have copied something since.
+- Docs' Find and Replace pastes `$1` and `\n` literally, resets its scope to all tabs each time it opens, and can miss strings with apostrophes. Use it for literal text only and confirm the match count first.
+
+## Write a glossary
+
+- Define your own product's terms and link out for another product's terms.
+- Check that two entries don't define the same thing differently.
+- Qualify a term that collides with Git, Next.js, or general web vocabulary, and prefer the name the UI shows.
+- State what an entry includes and excludes, and name the entries it depends on.
+- Record a source for each entry (page URL, UI label, or MCP tool).
+- Cross-references between entries conflict with the heading-link rule above. Don't add them until the Content Publisher team confirms how they should work.
 
 ## Check a Doc before publishing
 

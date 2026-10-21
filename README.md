@@ -17,7 +17,7 @@ Invoke it with `/jazzsequence-skills:pantheon-docs-writer`.
 
 `skills/pantheon-docs-writer/SKILL.md` is a short router: the workflow, the Diátaxis step, and the rules that apply to every page. The detail lives in `skills/pantheon-docs-writer/references/`, and Claude loads only the files a task needs.
 
-Beyond the style guide's formatting rules, the skill covers the problems that came up most in a review of 25 docs: be verbs, hyperbole, and product claims with no source. It asks for the inputs it needs before drafting, delivers open questions with the draft, and has a Docs mode for pages written in Google Docs and published with Content Publisher. `tests/` holds fixtures from the review so you can check a change against them.
+Beyond the style guide's formatting rules, the skill covers the problems that came up most in a review of 25 docs: be verbs, hyperbole, and product claims with no source. It asks for the inputs it needs before drafting, delivers open questions with the draft, and has a Docs mode for pages written in Google Docs and published with Content Publisher. Docs mode covers reviewing a Doc (reply format, numbered product questions, terminology conflicts), working safely in a shared Doc, and writing a glossary. `tests/` holds fixtures from the review so you can check a change against them.
 
 ## Installation
 
