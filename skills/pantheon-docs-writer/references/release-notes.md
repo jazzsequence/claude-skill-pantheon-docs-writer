@@ -66,7 +66,7 @@ What CI checks (`validate-release-notes.yml`, runs on PRs that touch `src/source
 
 Check all three dates before handoff:
 
-- A midnight `published_at` (`T00:00:00Z`) fails CI. Replace it with the real publish time. Ask for the time if you don't have it.
+- A midnight `published_at` (`T00:00:00Z`) fails CI. Do not replace it with the real publish time yourself. Inform the user to update this in the PR before merging.
 - A `published_date` that differs from the filename date isn't an error in the code. Report it and ask which date the announcement carries. Don't change a date to make the three match unless you were asked to.
 - A `published_at` whose date part differs from `published_date` can happen when UTC crosses midnight (2 existing notes). Check the timezone before you call it a mistake.
 
